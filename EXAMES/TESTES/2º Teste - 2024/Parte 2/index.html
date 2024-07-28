@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>T@kePill</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Gestão de Pacientes e Medicamentos</h1>
+
+        <div class="form-section">
+            <h2>Adicionar Medicamento</h2>
+            <form id="medicamento-form">
+                <select id="paciente-select" required></select>
+                <input type="text" id="nome-medicamento" placeholder="Nome do Medicamento" required>
+                <input type="number" id="total-comprimidos" placeholder="Número Total de Comprimidos" required>
+                <input type="number" id="dose-medicamento" placeholder="Dose (nº de comprimidos)" required>
+                <input type="text" id="frequencia-medicamento" placeholder="Frequência (Ex: 3 por dia)" required>
+                <button type="submit">Adicionar Medicamento</button>
+            </form>
+        </div>
+
+        <div class="dashboard">
+            <h2>Dashboard - Tomas de Medicação</h2>
+            <table id="dashboard-table">
+                <thead>
+                    <tr>
+                        <th>Nome do Paciente</th>
+                        <th>Medicamento</th>
+                        <th>Dose</th>
+                        <th>Hora da Toma</th>
+                        <th>Ação</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+    </div>
+    <script type="module" src="js/main.js"></script>
+</body>
+</html>

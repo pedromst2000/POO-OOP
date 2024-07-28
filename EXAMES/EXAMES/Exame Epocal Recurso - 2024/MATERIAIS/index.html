@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo de Buracos Negros na Tabela</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            margin: 20px auto;
+        }
+        td {
+            width: 50px;
+            height: 50px;
+            border: 1px solid #000;
+            text-align: center;
+            vertical-align: middle;
+        }
+        .player {
+            background-color: green;
+        }
+        .blackhole {
+            background-color: black;
+        }
+        .goal {
+            background-color: yellow;
+        }
+        .player.blackhole {
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <h1>BlackHolesTable</h1>
+    <div>
+        <button id="rollDice">Lançar Dado</button>
+        <p>Jogadas: <span id="moves">0</span></p>
+        <p>Dado: <span id="dice">-</span></p>
+    </div>
+    <table id="gameTable"></table>
+
+    <script src="game.js"></script>
+</body>
+</html>
