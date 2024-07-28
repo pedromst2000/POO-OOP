@@ -1,0 +1,231 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.top-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #020202;
+  color: #fff;
+}
+
+.rigth-side {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 1em;
+  gap: 2em;
+}
+
+#score {
+  background-color: #5c5b59e1;
+  padding: 0.5em 1em;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  letter-spacing: 0.1em;
+  font-weight: 700;
+}
+
+#Logout {
+  background-color: #ffffff;
+  outline: none;
+  border: none;
+  padding: 0.5em 1em;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  letter-spacing: 0.1em;
+  font-weight: 700;
+  transition: all 0.3s;
+}
+
+#Logout:hover {
+  background-color: #000000;
+  color: #fff;
+  border: 1px solid #ffffff;
+  cursor: pointer;
+}
+
+.tasks-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 3rem 2rem;
+}
+.task-column {
+  flex: 1;
+  margin: 0 20px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.tasks-container {
+  margin-bottom: 10px;
+  border-radius: 10px;
+  padding: 3em;
+}
+
+.title-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.todo-bg-container {
+  background: rgba(169, 44, 12, 0.926);
+  border-radius: 10px;
+}
+
+.doing-bg-container {
+  border-radius: 10px;
+  background: rgb(36, 95, 124);
+}
+
+.done-bg-container {
+  border-radius: 10px;
+  background: rgba(39, 113, 16, 0.889);
+}
+
+.title {
+  color: #f5efef;
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-bottom: 0.7rem;
+  padding-top: 0.5em;
+}
+
+.task-column.todo-container {
+  background: rgba(163, 45, 15, 0.274);
+}
+
+.task-column.doing-container {
+  background: rgba(46, 112, 146, 0.274);
+}
+
+.task-column.done-container {
+  background: rgba(38, 113, 16, 0.274);
+}
+
+#todo-item-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background: rgba(163, 45, 15, 0.685);
+  border-radius: 10px;
+  padding: 0.7em;
+  color: #fff;
+  cursor: move;
+}
+
+#doing-item-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background: rgba(46, 112, 146, 0.685);
+  border-radius: 10px;
+  padding: 0.7em;
+  color: #fff;
+  cursor: move;
+}
+
+#done-item-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background: rgba(39, 113, 16, 0.518);
+  border-radius: 10px;
+  padding: 0.7em;
+  color: #fff;
+  cursor: move;
+}
+
+#todo-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+#doing-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+#done-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.draggable.dragging {
+  opacity: 0.5;
+}
+
+.kanban-column {
+  height: 100%;
+}
+
+.create-task {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+#addTask {
+  background-color: #000000;
+  outline: none;
+  border: none;
+  color: #fff;
+  padding: 0.5em 1em;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  letter-spacing: 0.1em;
+  font-weight: 700;
+  transition: all 0.3s;
+}
+
+#addTask:hover {
+  background-color: #ffffff;
+  color: #000000;
+  border: 1px solid #000000;
+  cursor: pointer;
+}
+
+.delete-task {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.opt-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+}
+
+#deleteTask {
+  background-color: #ffff;
+  outline: none;
+  border: 1px solid #000000;
+  color: #000000;
+  padding: 0.5em 1em;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  letter-spacing: 0.1em;
+  font-weight: 700;
+  transition: all 0.3s;
+}
+
+#deleteTask:hover {
+  background-color: #000000;
+  color: #ffffff;
+  cursor: pointer;
+}

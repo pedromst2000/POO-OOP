@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title id="auth-title">To Do List - Login</title>
+    <link rel="stylesheet" href="/css/auth.css" />
+  </head>
+  <body>
+    <div id="login-form-authentication">
+      <div class="login-form-group">
+        <form id="login-form">
+          <h3>Login</h3>
+
+          <input type="username" id="username" placeholder="Username" />
+          <input type="password" id="password" placeholder="Password" />
+          <span>
+            Don't have an account?
+            <a id="link-register" href="/html/auth/register.html">Register</a>
+          </span>
+          <button type="submit" id="login-btn">Login</button>
+          <div id="message"></div>
+        </form>
+      </div>
+    </div>
+
+    <script type="module" src="/js/views/AuthView.js"></script>
+  </body>
+</html>

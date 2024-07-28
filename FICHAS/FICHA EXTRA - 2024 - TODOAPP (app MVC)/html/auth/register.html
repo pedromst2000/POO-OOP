@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title id="auth-title">To Do List - Register</title>
+    <link rel="stylesheet" href="/css/auth.css" />
+  </head>
+  <body>
+    <div id="register-form-authentication">
+      <div class="register-form-group">
+        <form id="register-form">
+          <h3>Register</h3>
+          <input type="email" id="email" placeholder="Email" />
+          <input type="username" id="username" placeholder="Username" />
+          <input type="password" id="password" placeholder="Password" />
+          <span>
+            Already have an Account
+            <a id="link-login" href="/html/auth/login.html">Login</a>
+          </span>
+          <button type="submit" id="register-btn">Register</button>
+          <div id="message"></div>
+        </form>
+      </div>
+    </div>
+
+    <script type="module" src="/js/views/AuthView.js"></script>
+  </body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To Do List - Home</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="top-container" draggable="false">
+      <div class="left-side" draggable="false">
+        <h1 draggable="false">To Do List</h1>
+      </div>
+      <div class="rigth-side" draggable="false">
+        <div class="score-container" draggable="false">
+          <span id="score" draggable="false"></span>
+        </div>
+        <div class="log-out-container" draggable="false">
+          <button id="Logout" draggable="false">Log Out</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="tasks-container">
+      <div class="task-column todo-container">
+        <div class="title-container todo-bg-container">
+          <div class="title">Todo</div>
+        </div>
+        <div class="kanban-column" id="todo-list"></div>
+      </div>
+      <div class="task-column doing-container">
+        <div class="title-container doing-bg-container">
+          <div class="title">Doing</div>
+        </div>
+        <div class="kanban-column" id="doing-list"></div>
+      </div>
+      <div class="task-column done-container">
+        <div class="title-container done-bg-container">
+          <div class="title">Done</div>
+        </div>
+        <div class="kanban-column" id="done-list"></div>
+      </div>
+    </div>
+
+    <div class="opt-container">
+      <div class="create-task">
+        <button id="addTask">Create Task</button>
+      </div>
+      <div class="delete-task">
+        <button id="deleteTask">Delete Task</button>
+      </div>
+    </div>
+
+    <script src="./js/init.js"></script>
+    <script type="module" src="./js/views/HomeView.js"></script>
+  </body>
+</html>
