@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestão de Álbuns Musicais</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Opcional, para estilizar a página -->
+</head>
+<body>
+    <h1>Gestão de Álbuns Musicais</h1>
+
+    <!-- Formulário para criar um álbum -->
+    <h2>Criar Álbum</h2>
+    <form id="formAlbum">
+        <label for="albumTitulo">Título:</label>
+        <input type="text" id="albumTitulo" required>
+        <label for="albumArtista">Artista:</label>
+        <input type="text" id="albumArtista" required>
+        <label for="albumAno">Ano de Lançamento:</label>
+        <input type="number" id="albumAno" required>
+        <label for="albumCapa">Capa (URL):</label>
+        <input type="text" id="albumCapa" required>
+        <button type="submit">Criar Álbum</button>
+    </form>
+
+    <!-- Formulário para adicionar música a um álbum -->
+    <h2>Adicionar Música</h2>
+    <form id="formMusica">
+        <label for="musicaAlbum">Álbum:</label>
+        <input type="text" id="musicaAlbum" required>
+        <label for="musicaTitulo">Título:</label>
+        <input type="text" id="musicaTitulo" required>
+        <label for="musicaDuracao">Duração (em segundos):</label>
+        <input type="number" id="musicaDuracao" min="1" max="300" required>
+        <label for="musicaRating">Rating (0 a 5):</label>
+        <input type="number" id="musicaRating" min="0" max="5" required>
+        <button type="submit">Adicionar Música</button>
+    </form>
+
+    <!-- Exibir Álbuns e Músicas -->
+    <h2>Álbuns</h2>
+    <button id="showAlbuns">Mostrar Álbuns</button>
+    <table id="tabelaAlbuns">
+        <thead>
+            <tr>
+                <th>Título</th>
+                <th>Artista</th>
+                <th>Ano</th>
+                <th>Capa</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+
+    <h2>Músicas do Álbum</h2>
+    <input type="text" id="albumParaMusicas" placeholder="Título do Álbum">
+    <button id="showMusicas">Mostrar Músicas</button>
+    <table id="tabelaMusicas">
+        <thead>
+            <tr>
+                <th>Título</th>
+                <th>Duração</th>
+                <th>Rating</th>
+                <th>Visualizações</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+
+    <script type="module" src="../Grupo2/index.js"></script>
+</body>
+</html>

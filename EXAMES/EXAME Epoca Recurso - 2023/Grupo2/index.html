@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestão de Alunos - Sistema de Turma</title>
+    <link rel="stylesheet" href="../Grupo2/styles.css">
+</head>
+<body>
+    <h1>Gestão de Alunos</h1>
+    <form id="alunoForm">
+        <div>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" required>
+        </div>
+        <div>
+            <label for="idade">Idade:</label>
+            <input type="number" id="idade" required>
+        </div>
+        <div>
+            <label for="notas">Notas (separadas por vírgula):</label>
+            <input type="text" id="notas" required>
+        </div>
+        <button type="submit">Adicionar Aluno</button>
+    </form>
+
+    <button id="exibirAlunosBtn">Exibir Alunos</button>
+    <button id="calcularMediaBtn">Calcular Média da Turma</button>
+    <button id="exibirMelhorAlunoBtn">Exibir Melhor Aluno</button>
+
+    <script type="module" src="../Grupo2/js/index.js"></script>
+</body>
+</html>

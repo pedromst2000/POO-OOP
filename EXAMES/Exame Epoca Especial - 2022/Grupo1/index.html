@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestão de Categorias de Animais</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .container {
+            max-width: 400px;
+            margin: 0 auto;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input, button {
+            margin-bottom: 10px;
+            padding: 8px;
+        }
+        button:disabled {
+            background-color: #ccc;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Gestão de Categorias de Animais</h1>
+
+        <!-- Caixa de texto e botão para adicionar categoria -->
+        <label for="categoriaInput">Nova Categoria:</label>
+        <input type="text" id="categoriaInput" placeholder="Insira a categoria">
+        <button id="addButton" disabled>ADD</button>
+
+        <!-- Combobox para exibir categorias -->
+        <label for="categoriaSelect">Categorias:</label>
+        <select id="categoriaSelect">
+            <option value="" disabled selected>Select a Category</option>
+            <option value="Mamífero">Mamífero</option>
+            <option value="Aves">Aves</option>
+            <option value="Réptil">Réptil</option>
+            <option value="Anfíbio">Anfíbio</option>
+        </select>
+
+        <!-- Botão para remover a categoria selecionada -->
+        <button id="removeButton">REMOVE</button>
+    </div>
+
+    <script src="../Grupo1/index.js"></script>
+</body>
+</html>

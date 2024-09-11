@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TiqueTaque App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>TiqueTaque Mini App</h1>
+    
+    <!-- Section for Adding Followers -->
+    <section id="addFollowerSection">
+        <h2>Add a Follower</h2>
+        <input type="text" id="followerName" placeholder="Follower Name">
+        <input type="number" id="followerAge" placeholder="Follower Age">
+        <button id="addFollowerBtn">Add Follower</button>
+    </section>
+    
+    <!-- Section for Adding Publications -->
+    <section id="addPublicationSection">
+        <h2>Add a Publication</h2>
+        <input type="text" id="publicationTitle" placeholder="Publication Title">
+        <input type="text" id="publicationGenre" placeholder="Publication Genre">
+        <input type="text" id="publicationAuthor" placeholder="Author Name">
+        <button id="addPublicationBtn">Add Publication</button>
+    </section>
+    
+    <!-- Section for Liking a Publication -->
+    <section id="likePublicationSection">
+        <h2>Like a Publication</h2>
+        <input type="text" id="likePublicationTitle" placeholder="Publication Title to Like">
+        <button id="likePublicationBtn">Like Publication</button>
+    </section>
+    
+    <!-- Section for Displaying Results -->
+    <section id="resultsSection">
+        <h2>Results</h2>
+        <button id="showResultsBtn">Show Results</button>
+        <div id="results"></div>
+    </section>
+    
+    <script type="module" src="../Parte2/js/classes/app.js"></script>
+</body>
+</html>
